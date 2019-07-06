@@ -68,6 +68,7 @@
         <proxyUsername/>
         <proxyPassword/>
         <webdriver.chrome.driver>/root/chromedriver</webdriver.chrome.driver>
+<!--        <webdriver.chrome.driver>D:\jiulong\Selenium-Maven-Template\src\test\resources\selenium_standalone_binaries\windows\googlechrome\64bit\chromedriver.exe</webdriver.chrome.driver>-->
     </properties>
 
     <dependencies>
@@ -133,8 +134,8 @@
                             <fileDownloadRetryAttempts>${retry.attempts}</fileDownloadRetryAttempts>
                             <fileDownloadReadTimeout>${read.timeout}</fileDownloadReadTimeout>
                             <operatingSystems>
-                                <windows>false</windows>
-                                <linux>true</linux>
+                                <windows>true</windows>
+                                <linux>false</linux>
                                 <mac>false</mac>
                             </operatingSystems>
                         </configuration>

@@ -15,11 +15,9 @@ public class BaiduHomePage {
     public BaiduHomePage() throws Exception {
         initQueryObjects(this, DriverBase.getDriver());
     }
-
     public BaiduHomePage enterSearchTerm(String searchTerm) {
         searchBar.findWebElement().clear();
         searchBar.findWebElement().sendKeys(searchTerm);
-
         return this;
     }
 
