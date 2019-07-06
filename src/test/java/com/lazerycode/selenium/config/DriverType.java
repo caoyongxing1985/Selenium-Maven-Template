@@ -38,6 +38,8 @@ public enum DriverType implements DriverSetup {
             options.merge(capabilities);
             options.setHeadless(HEADLESS);
             options.addArguments("--no-default-browser-check");
+            options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+            options.addArguments("--no-sandbox");
             options.setExperimentalOption("prefs", chromePreferences);
 
             return new ChromeDriver(options);

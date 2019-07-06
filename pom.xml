@@ -55,7 +55,7 @@
         <read.timeout>30000</read.timeout>
         <connection.timeout>40000</connection.timeout>
         <retry.attempts>4</retry.attempts>
-        <browser>firefox</browser>
+        <browser>chrome</browser>
         <threads>1</threads>
         <remote>false</remote>
         <headless>true</headless>
@@ -67,6 +67,7 @@
         <proxyPort/>
         <proxyUsername/>
         <proxyPassword/>
+        <webdriver.chrome.driver>/root/chromedriver</webdriver.chrome.driver>
     </properties>
 
     <dependencies>
@@ -132,9 +133,9 @@
                             <fileDownloadRetryAttempts>${retry.attempts}</fileDownloadRetryAttempts>
                             <fileDownloadReadTimeout>${read.timeout}</fileDownloadReadTimeout>
                             <operatingSystems>
-                                <windows>true</windows>
+                                <windows>false</windows>
                                 <linux>true</linux>
-                                <mac>true</mac>
+                                <mac>false</mac>
                             </operatingSystems>
                         </configuration>
                         <executions>
